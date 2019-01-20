@@ -1,4 +1,4 @@
-package com.liquidmemories.space.proxy;
+package com.liquidmemories.liquidspace.proxy;
 
 public class ClientProxy extends CommonProxy {
 
