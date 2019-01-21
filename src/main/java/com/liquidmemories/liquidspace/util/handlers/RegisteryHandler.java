@@ -1,7 +1,10 @@
 package com.liquidmemories.liquidspace.util.handlers;
 
+import com.liquidmemories.liquidspace.init.ModBlocks;
 import com.liquidmemories.liquidspace.init.ModItems;
 import com.liquidmemories.liquidspace.util.IHasModel;
+
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -18,6 +21,12 @@ public class RegisteryHandler
 	}
 	
 	@SubscribeEvent
+	public static void onBlockRegister(RegistryEvent.Register<Block> event) 
+	{
+		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+	}
+	
+	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) 
 	{
 		for(Item item : ModItems.ITEMS) 
@@ -27,5 +36,13 @@ public class RegisteryHandler
 				((IHasModel) item).registerModels();
 			}
 		}
+		
+		for(Block block : ModBlocks.BLOCKS) 
+		{
+			if(block instanceof IHasModel) 
+			{
+				((IHasModel) block).registerModels();
+			}
+		}	
 	}
 }
