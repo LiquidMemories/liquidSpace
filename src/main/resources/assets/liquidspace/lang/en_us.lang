@@ -2,3 +2,4 @@ item.ruby.name=Ruby
 
 //Blocks
 tile.ruby_block.name=Block of Ruby
+tile.engine_block.name=Engine
