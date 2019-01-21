@@ -1,7 +1,8 @@
-package com.liquidmemories.space;
+package com.liquidmemories.liquidspace;
 
-import com.liquidmemories.space.proxy.CommonProxy;
-import com.liquidmemories.space.util.Reference;
+import com.liquidmemories.liquidspace.proxy.CommonProxy;
+import com.liquidmemories.liquidspace.util.Reference;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;

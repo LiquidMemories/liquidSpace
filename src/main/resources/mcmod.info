@@ -1,7 +1,7 @@
 [
 {
-  "modid": "sm",
-  "name": "Space Mod",
+  "modid": "liquidspace",
+  "name": "Liquid Space",
   "description": "A mod for space exploration.",
   "version": "1.0",
   "mcversion": "1.12.2",
